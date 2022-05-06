@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tag allows proper viewing in mobiles, without it, it would look lke a zoomed desktop app in mobile view -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R2 Automation Website</title>
+  <!-- This evens out css semantics across browser applications and conforms the html code to standard -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <!-- Custom CSS Stylng -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <!-- Navigation Section -->
+  <header>
+    <div class="logo">
+      <img src="img/Logo.jpg" alt="">
+    </div>
+    <!-- aria label is useful because the navigation button would not have a text description -->
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <!-- Using "__" to indicate all children of a parent-->
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Introduction -->
+  <!-- NOTE: CLASS for css styling & ID for anchor tags/ the "- -" indicates a modifier class-->
+  <section class="intro" id="home">
+    <h1 class="section__title section__title--intro">
+      Hi, I am <strong>Aruoture</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro"> Your Automation Engineer</p>
+    <img src="img/Potrate_01.jpg" alt="Pic of R2" class="intro__img">
+  </section>
+
+  <!-- My Services -->
+  <section class="my-services" id="services">
+    <h2 class="section__title section__title--services">What I do</h2>
+    <div class="services">
+      <div class="service">
+        <h3> Control System Integration</h3>
+        <p> Highly Skilled and Paasionate in system integration plant-wide integration of PLC and
+          Instrumentation, IT, other PLC product assest. I have over 5 years experieonce in system
+          integratio and commisionig in Siemens, Allen bradley, HIMA, DCS,SIS and PLC's</p>
+      </div> <!-- Close service div-->
+
+      <div class="service">
+        <h3> SCADA System Design</h3>
+        <p>i am a performance riven SCADA design engineer
+          .HMI graphics that conform to ISA standard
+          and provision of OPC configuration for cross platform connectivity
+          i.e between OT end (Factorytalk view, Wonderware Intouch, Wincc) and IT enterprise (MES system)</p>
+      </div> <!-- Close service div-->
+
+      <div class="service">
+        <h3> Web development </h3>
+        <p>Creative front-end developer with 2years experience in provide high impact web solutions.
+          Skilled in HTML, CSS Javascript and frameworks (Bootstap 5.0, React.js) in designing,
+          developing and testing web based applications</p>
+      </div> <!-- Close service div-->
+    </div> <!-- Close services div-->
+    <a href="#projects" class="btn">My Work</a>
+  </section>
+
+  <!-- About Me -->
+  <section class="about-me" id="about">
+    <h2 class="section__title section__title--about"> Who I am</h2>
+    <p class="section__subtitle section__subtitle--about">Automation Engineer based in LAGOS</p>
+
+    <div class="about-me__body">
+      <p>Automation Engineer with a wide Knowledge of PLC and Robotics who operates tasks while adhering to safety guidlines
+        Experience in leading and guidong Technicians and Engineers in Automation Control concepts, analytics and troubleshooting
+        of manufacturing and process Automation systems.</p>
+      <p>Currently diving into the world of Web development. Intermediary level attained in front-end web development and with the immediate
+        goal of becoming a full-stack web developer </p>
+    </div>
+    <img src="img/Potrate_02.jpg" alt="Pic of R2 on-site" class="about-me__img">
+  </section>
+
+  <!-- Projects -->
+  <section class="my-projects" id="projects">
+    <h2 class="section__title--projects">Projects</h2>
+    <p class="section__subtitle--projects"> Projects Undertaken</p>
+
+    <div class="portfolio">
+      <!-- Portfolion Item_01 -->
+      <a href="#" class="portfolio__item">
+        <img src="img/Siemens.jpg" alt="siemens automation project" class="portfolio__img">
+      </a>
+
+      <!-- Portfolion Item_02 -->
+      <a href="#" class="portfolio__item">
+        <img src="img/Rockwell.jpg" alt="Rockwell automation project" class="portfolio__img">
+      </a>
+
+      <!-- Portfolion Item_03 -->
+      <a href="#" class="portfolio__item">
+        <img src="img/HIMA.jpg" alt="HIMA automation project" class="portfolio__img">
+      </a>
+
+      <!-- Portfolion Item_04 -->
+      <a href="portfolio-item.html" class="portfolio__item">
+        <img src="img/wonderware.jpg" alt="wonderware automation project" class="portfolio__img">
+      </a>
+
+      <!-- Portfolion Item_05 -->
+      <a href="#" class="portfolio__item">
+        <img src="img/Siemens2.jpg" alt="Siemens migration project" class="portfolio__img">
+      </a>
+
+      <!-- Portfolion Item_06 -->
+      <a href="#" class="portfolio__item">
+        <img src="img/C++.jpg" alt="Embedded Real-time systems" class="portfolio__img">
+      </a>
+    </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="Aruoture_ivwighren@yahoo.co.uk" class="footer__link">Aruoture_ivwighren@yahoo.co.uk
+    </a>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://www.linkedin.com/in/aruotureivwighren/">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://github.com/Aruoture007">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://www.facebook.com/arotustevens/">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://www.instagram.com/arrow_too/?hl=en">
+          <i class="fa-brands fa-instagram-square"></i></a>
+      </li>
+    </ul>
+  </footer>
+
+    <script src="js/function.js"></script>
+</body>
+
+</html>
