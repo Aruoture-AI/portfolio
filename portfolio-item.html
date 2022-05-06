@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tag allows proper viewing in mobiles, without it, it would look lke a zoomed desktop app in mobile view -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R2 Automation Website</title>
+  <!-- This evens out css semantics across browser applications and conforms the html code to standard -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <!-- Custom CSS Stylng -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <!-- Navigation Section -->
+  <header>
+    <div class="logo">
+      <img src="img/Logo.jpg" alt="">
+    </div>
+    <!-- aria label is useful because the navigation button would not have a text description -->
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <!-- Using "__" to indicate all children of a parent-->
+      <ul class="nav__list">
+        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+        <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+        <li class="nav__item"><a href="index.html#projects" class="nav__link">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Introduction -->
+  <!-- NOTE: CLASS for css styling & ID for anchor tags/ the "- -" indicates a modifier class-->
+  <section class="intro">
+    <h1 class="section__title section__title--intro">
+      Project Name: <strong>SCADA Integration</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro"> A short Subtitle</p>
+    <img src="img/wonderware.jpg" alt="Pic of R2" class="intro__img">
+  </section>
+
+  <div class="portfolio-item-individual">
+    <p>This project entail the upgrade and system migration of obsolete wonderware version</p>
+    <img src="img/wonderware-01.jpg" alt="Wonderware Integration">
+    <p></p>
+    <p></p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="Aruoture_ivwighren@yahoo.co.uk" class="footer__link">Aruoture_ivwighren@yahoo.co.uk
+    </a>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://www.linkedin.com/in/aruotureivwighren/">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://github.com/Aruoture007">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://www.facebook.com/arotustevens/">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://www.instagram.com/arrow_too/?hl=en">
+          <i class="fa-brands fa-instagram-square"></i></a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="js/function.js"></script>
+</body>
+
+</html>
